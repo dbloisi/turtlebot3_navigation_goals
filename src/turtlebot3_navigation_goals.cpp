@@ -27,6 +27,7 @@ int main(int argc, char** argv){
   ROS_INFO("Sending goal");
   ac.sendGoal(goal);
 
+  ROS_INFO("Goal sent, waiting for results");
   ac.waitForResult();
 
   if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED)
