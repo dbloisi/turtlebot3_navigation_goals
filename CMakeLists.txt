@@ -201,7 +201,4 @@ include_directories(
 add_executable(turtlebot3_navigation_goals src/turtlebot3_navigation_goals.cpp)
 target_link_libraries(turtlebot3_navigation_goals ${catkin_LIBRARIES})
 
-add_executable(turtlebot3_visual_goals src/turtlebot3_visual_goals.cpp)
-target_link_libraries(turtlebot3_visual_goals ${catkin_LIBRARIES})
-
 
